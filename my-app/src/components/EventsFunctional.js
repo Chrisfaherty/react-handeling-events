@@ -1,13 +1,15 @@
 import React, { Component } from 'react'
 
-export class EventsFunctional extends Component {
-  render() {
+function EventsFunctional(){
+    function clickHandler(){
+        console.log("Clicked the functional button")
+    }
+
     return (
       <div>
-        <button>Click me - functional component</button>
+        <button onClick={clickHandler}>Click me - functional component</button>
       </div>
     )
   }
-}
 
 export default EventsFunctional
